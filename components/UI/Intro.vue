@@ -1,0 +1,32 @@
+<template>
+  <section class="intro">
+    <div class="container">
+      <h2>{{ title }}</h2>
+      <slot />
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  props:{
+    title:{
+      type:String,
+      required:true
+    }
+  }
+}
+</script>
+
+<style lang="scss">
+.intro{
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: #4b40e3;
+  margin-bottom: 25px;
+  h1{
+    font-size: 26px;
+  }
+}
+</style>
